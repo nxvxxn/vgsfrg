@@ -1,0 +1,239 @@
+.face{
+    border: 2px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(53, 223, 223);
+    margin-top: 150px;
+    margin-left: 210px;
+    position: relative;
+    border-radius: 50% 50% 0% 0%;
+    animation: moveface 10s infinite;
+    transform-origin: top;
+}
+.eye1{
+    border: 2px;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    position: absolute;
+    margin-top:20px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.eye2{
+    border: 2px;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    position: absolute;
+    margin-top:20px;
+    margin-left: 60px;
+    border-radius: 50%;
+}
+.mouth{
+    border: 2px;
+    height: 15px;
+    width: 45px;
+    background-color: rgb(199, 112, 187);
+    border-radius: 5px 5px 30px 30px;
+    position: absolute;
+    margin-top:60px;
+    margin-left: 27px;
+}
+.body1{
+    border: 2px;
+    height: 120px;
+    width: 100px;
+    background-color:rgb(0, 255, 221);
+    position: relative;
+    top: 110px;
+    margin-left: px; 
+    animation: movebody 0s infinite;
+}
+.righthand{
+    border: 2px;
+    height: 100px;
+    width: 10px;
+    background-color: black;
+    position: relative;
+    top: 0px;
+    margin-left: 100px;
+    /* overflow: hidden; */
+    z-index: -3;
+    transform: rotate(-20deg);
+    animation: moverighthand 1s infinite;
+}
+.lefthand{
+    border: 2px;
+    height: 100px;
+    width: 10px;
+    background-color: black;
+    position: relative;
+    bottom: 100px;
+    right: 15px;
+        /* overflow: hidden; */
+        z-index: -3;
+    transform: rotate(20deg);
+    animation: movelefthand 1s infinite;
+}
+.rightleg{
+    border: 2px;
+    height: 100px;
+    width: 10px;
+    background-color: black;
+    position: relative;
+    bottom: 97px;
+    right: -28px;
+           /* overflow: hidden; */
+           z-index: -3;
+    transform: rotate(0deg);
+    animation: moverightleg 1s infinite;
+}
+.leftleg{
+    border: 2px;
+    height: 100px;
+    width: 10px;
+    background-color: black;
+    position: relative;
+    bottom: 197px;
+    right: -79px;
+    /* overflow: hidden; */
+    z-index: -3;
+    transform: rotate(0deg);
+    animation: moveleftleg 1s infinite ;
+}
+.crown{
+    border: 2px;
+    height: 70px;
+    width: 100px;
+    background-color: black;
+    position: relative;
+    bottom: 570px;
+    border-radius: 3000% 3000% 330% 330%;
+    transform: rotate(30deg);
+    left: 37px;
+} 
+.hair{
+    border: 2px;
+    height: 30px;
+    width: 80px;
+    background-color: black;
+    position: relative;
+    bottom: 600px;
+    border-radius: 40px 20px 30px 20px;
+}
+.shoe1{
+    border: 2px;
+    height: 20px;
+    width: 34px;
+    background-color: rgb(27, 214, 167);
+    position: absolute;
+    top:308px;
+    margin-left: 30px;
+    border-radius: 50px 20px 20px;
+    animation: moveshoe1 1s infinite;
+        /* overflow: hidden; */
+        z-index: -3;
+}
+.shoe2{
+    border: 2px;
+    height: 20px;
+    width: 34px;
+    background-color:rgb(17, 231, 203);
+    position: absolute;
+    top:308px;
+    margin-left: 83px;
+    border-radius: 50px 20px 20px;
+     /* overflow: hidden; */
+     z-index: -3;
+    animation: moveshoe1 1s infinite;
+}
+body{ background-color:palevioletred;}
+@keyframes moveleftleg {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform:rotate(0deg) ;
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes moverightleg{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform:rotate(0deg) ;
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+  @keyframes moverighthand{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform:rotate(0deg) ;
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+  }  
+  @keyframes movelefthand {
+
+     0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform:rotate(0deg) ;
+    }
+    75%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+  }
+  @keyframes moveshoe1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform:rotate(0deg) ;
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
